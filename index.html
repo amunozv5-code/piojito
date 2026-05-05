@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Piojito 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BOTÓN MENÚ -->
+<div id="menuBtn" onclick="toggleMenu()">☰</div>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+  <h2>Menú</h2>
+
+  <p onclick="mostrarSeccion('como')">¿Cómo funciono?</p>
+  <p onclick="mostrarSeccion('porque')">¿Por qué hice esto?</p>
+  <p onclick="mostrarSeccion('links')">Links importantes</p>
+
+  <div id="contenidoMenu"></div>
+</div>
+
+<div id="versiculo">
+  El amor es sufrido, es benigno; el amor no tiene envidia, el amor no es jactancioso, no se envanece; 
+  no hace nada indebido, no busca lo suyo, no se irrita, no guarda rencor; 
+  no se goza de la injusticia, mas se goza de la verdad. 
+  Todo lo sufre, todo lo cree, todo lo espera, todo lo soporta. 💙
+</div>
+
+<!-- CARD PRINCIPAL -->
+<div class="card">
+  <h1>Mi Piojito 💙</h1>
+  <h3>Notita de hoy:</h3>
+
+  <h3 id="mensajeInicial"></h3>
+
+  <select id="categoria">
+    <option value="teamo">💌 Te amo</option>
+    <option value="apoyo">💪 Apoyo</option>
+    <option value="tranquilidad">🌙 Tranquilidad</option>
+    <option value="tips">⚡ Quick tips</option>
+    <option value="audios">🎤 Audios</option>
+  </select>
+
+  <button onclick="mostrarNota()">Dame una notita 💕</button>
+
+  <p id="nota"></p>
+
+  <audio id="player" controls></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
